@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <title>得到倾斜加黑的字体</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <link rel="stylesheet"  media="screen" href="index.css" >
+    </head>
+    <body>
+    <h1>得到倾斜加黑的字体，可以在微信中发送</h1>
+    <div id = "input-text">
+        <input v-model="message" placeholder="请输入英文">
+        <p id = "reverse">{{ reversedMessage }}</p> 
+        <button type = "button" v-show = "status" class="btn" data-clipboard-target="#reverse" >
+                复制
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+    <script src="index.js"></script>
+    </body>
+</html>
