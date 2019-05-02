@@ -8,9 +8,6 @@ var main = new Vue({
     computed: {
         reversedMessage: function () {
             var newMessage = '';
-            if (this.message.length > 0) {
-                this.status = true;
-            }
             for (var codePoint of this.message) {
                 codePoint = codePoint.charCodeAt(0);
                 // A - Z 转换
@@ -27,6 +24,15 @@ var main = new Vue({
                 }
             }
             return newMessage;
+        }
+    },
+    methods: {
+        update: function () {
+            if (this.message.length > 0) {
+                this.status = true;
+            }  else {
+                this.status = false;
+            }
         }
     }
 });
