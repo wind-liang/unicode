@@ -6,3 +6,9 @@
 ![](unicode.jpg)
 
 在线体验地址：[text.windlaing.cc](http://text.windliang.cc)。
+
+微信小程序**神奇字体**已发布，支持更多字体选择。
+
+![](chat.jpg)
+
+![](code.jpg)
