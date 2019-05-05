@@ -70,10 +70,16 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
-.push,
+.mini {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/*.push,*/
 footer {
-    height: 50px;
-    margin: 5px auto;
+ 
+    margin: 20px auto;
     text-align: center;
     vertical-align: text-bottom;
 }
